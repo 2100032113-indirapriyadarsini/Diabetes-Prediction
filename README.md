@@ -1,71 +1,71 @@
 # Diabetes-Prediction
-🩺 Diabetes Prediction Using Machine Learning
-This project predicts whether a person is diabetic or not using machine learning with the PIMA Indian Diabetes Dataset.
+# 🩺 Diabetes Prediction Using Machine Learning
 
-📁 About the Project
-It uses a Support Vector Machine (SVM) model.
+This project predicts whether a person is diabetic or not using machine learning on the **PIMA Indian Diabetes Dataset**. The model was developed in **Google Colab** and later tested using **Spyder IDE (via Anaconda Navigator)**.
 
-Data is preprocessed and scaled using StandardScaler.
+---
 
-The model is trained and tested for accuracy.
+## 📁 Project Overview
 
-You can also enter new data and get a prediction.
+- Built a classification model using **Support Vector Machine (SVM)**.
+- Applied **StandardScaler** for feature scaling.
+- Evaluated model performance with accuracy scores.
+- Allowed real-time prediction using custom input data.
 
-📌 Tools Used
-Python
+---
 
-Pandas
+## 📊 Dataset
 
-NumPy
+- **Source**: PIMA Indian Diabetes Dataset
+- **Features**:
+  - Pregnancies
+  - Glucose
+  - Blood Pressure
+  - Skin Thickness
+  - Insulin
+  - BMI
+  - Diabetes Pedigree Function
+  - Age
+- **Target**:
+  - `0` – Not Diabetic  
+  - `1` – Diabetic
 
-Scikit-learn (SVM, train_test_split, accuracy_score, StandardScaler)
+---
 
-Jupyter Notebook / Google Colab
+## 🛠️ Technologies Used
 
-📊 Dataset Info
-Dataset: PIMA Indian Diabetes
+- **Language**: Python  
+- **IDE**: Google Colab (for model building), Spyder (for execution via Anaconda)  
+- **Libraries**:
+  - Pandas
+  - NumPy
+  - Scikit-learn
 
-Features: Glucose, Blood Pressure, BMI, Age, etc.
+---
 
-Target: 1 = Diabetic, 0 = Not Diabetic
+## 🧪 How It Works
 
-🧪 How it Works
-Load and explore the dataset.
+1. Load and explore the dataset.
+2. Split into training and testing sets.
+3. Scale the features using `StandardScaler`.
+4. Train the model using `SVC` (Support Vector Classifier).
+5. Evaluate the model's accuracy.
+6. Accept user input and predict diabetic status.
 
-Split data into training and testing sets.
+---
 
-Scale the data for better accuracy.
+## 🎯 Model Accuracy
 
-Train the model using SVM.
+- **Training Accuracy**: ~78%  
+- **Testing Accuracy**: ~77%
 
-Test the model and get accuracy.
+---
 
-Take user input and make prediction.
+## ▶️ How to Run
 
-🎯 Accuracy
-Training Accuracy: ~78%
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yourusername/diabetes-prediction-ml.git
 
-Testing Accuracy: ~77%
-
-▶️ Run the Project
-Install the required libraries:
-
-bash
-Copy
-Edit
-pip install numpy pandas scikit-learn
-Open the .ipynb file in Jupyter or Google Colab.
-
-Run each cell step-by-step.
-
-Try your own input:
-
-python
-Copy
-Edit
-input_data = [5, 116, 74, 0, 0, 25.6, 0.201, 30]
-📌 Sample Output
-text
-Copy
 Edit
 The person is diabetic ✅
